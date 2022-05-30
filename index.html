@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.css" />
+    
+    <!-- Swiper link -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+
+    <link rel="stylesheet" href="./assets/style/main.css">
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="company-sidebar">
+                <div class="company-sidebar__logo">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/company-images/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="company-sidebar_lang">
+                    <div class="sidebar-lang">
+                        <a href="#">EN</a>
+                        <a href="#">RU</a>
+                        <a href="#">UZ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="burger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="menu-right">
+                <svg width="22" height="34" viewBox="0 0 22 34" xmlns="http://www.w3.org/2000/svg"><rect x=".75" y=".75" width="20.5" height="32.5" rx="9.25"></rect><path d="M11 8v8"></path></svg>
+            </div>
+        </header>
+
+        <div class="container-fluid" id="fullpage">
+            <!-- S E C T I O N  C O M P A N Y -->
+            <div class="section">
+                <div class="section-line vertical-line"></div>
+                <div class="row first-section section-company">
+                    <div class="section-company__video">
+                        <video loop muted playsinline preload="auto" autoplay>
+                            <source src="./assets/images/company-images/company-bg.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="section-company__sound">
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="muted-sound">Включить звук</span>
+                    </div>
+                    <div class="section-company__btn">
+                        <a href="">О компании</a>
+                    </div>
+                    <div class="vertical-center__line vertical-line"></div>
+                    <div class="company-content">
+                            <h1>
+                                <span>Агро</span>
+                                <span>Пром</span>
+                                <span>Холдинг</span>
+                            </h1>
+                    </div>
+                    <a href="#" class="arrow-bottom"></a> 
+                </div>
+            </div>
+            <!-- S E C T I O N  A C T I V I T Y -->
+            <div class="section">
+                <div class="section-line vertical-line"></div>
+                <div class="row first-section section-activity">
+                    <div class="ibg section-company__video">
+                        <img id="content-bg" src="./assets/images/activity-images/ibg-bg.jpg" alt="bg">
+                        <video onended="videoEnd()" id="section-video"
+                                <!-- muted playsinline preload="auto" -->
+                        >
+                            <source id="srcVideo" src="./assets/images/activity-images/segments-video/segments-1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="vertical-centesr__line vertical-line"></div>
+                    <div class="segmentsMapZona">
+                        <div class="segmentsMap">
+                            <div loading="0" id="one" class="segmentsMap_pin pins-green">
+                                <span></span>
+                                <div class="segmentsMap-text">
+                                    <p>Молочно-товарная ферма</p>
+                                </div>
+                            </div>
+                            <div loading="0" id="two" class="segmentsMap_pin pins-green">
+                                <span></span>
+                                <div class="segmentsMap-text">
+                                    <p>Производство мяса птицы</p>
+                                </div>
+                            </div>
+                            <div loading="0" id="three" class="segmentsMap_pin pins-blue">
+                                <span></span>
+                                <div class="segmentsMap-text">
+                                    <p>Управляющая компания СЗАО «Серволюкс»</p>
+                                </div>
+                            </div>
+                            <div loading="0" id="four" class="segmentsMap_pin pins-blue">
+                                <span></span>
+                                <div class="segmentsMap-text">
+                                    <p>Ритейл</p>
+                                </div>
+                            </div>
+                            <div loading="0" id="five" class="segmentsMap_pin pins-green">
+                                <span></span>
+                                <div class="segmentsMap-text">
+                                    <p>Комбикормовое производство</p>
+                                </div>
+                            </div>
+                            <div loading="0" id="six" class="segmentsMap_pin pins-green">
+                                <span></span>
+                                <div class="segmentsMap-text">
+                                    <p>Глубокая переработка мяса птицы</p>
+                                </div>
+                            </div>
+                            <div loading="0" id="seven" class="segmentsMap_pin pins-blue">
+                                <span></span>
+                                <div class="segmentsMap-text">
+                                    <p>Научно-исследовательский инжиниринговый центр</p>
+                                </div>
+                            </div>
+                            <div loading="0" id="eight" class="segmentsMap_pin pins-blue">
+                                <span></span>
+                                <div class="segmentsMap-text">
+                                    <p>Племенное птицеводство</p>
+                                </div>
+                            </div>
+                            <div loading="0" id="nine" class="segmentsMap_pin pins-blue right-pins">
+                                <span></span>
+                                <div class="segmentsMap-text right-pins__text">
+                                    <p>Мясопереработка (Российская Федерация)</p>
+                                </div>
+                            </div>
+                            <div loading="0" id="ten" class="segmentsMap_pin pins-blue right-pins">
+                                <span></span>
+                                <div class="segmentsMap-text right-pins__text">
+                                    <p>Торговое представительство (Российская Федерация)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- P O P u P  M O D A L -->
+                    <div class="segmentsMapVideo-content">
+                        <h3 id="popUp-text">Ритейл</h3>
+                        <div class="segmentsMapVideo-content__desc">
+                            <p id="popUp-dec">
+                                Региональная мультиформатная сеть розничной торговли в Республике Беларусь. Представлена гастрономами «Квартал   вкуса», объектами фирменной торговли «Петруха» и специализированными магазинами «Мясновъ».
+                            </p>
+                        </div>
+                        <a class="backtoMap">Назад к карте</a>
+                    </div>
+                </div>
+            </div>
+            <!-- S E C T I O N  O U R D I R E C T I O N S -->
+            <div class="section">
+                <div class="row first-section"> Section 4.
+                </div>
+            </div>
+            <!-- S E C T I O N  M I S S I O N -->
+            <div class="section section-bg">
+                <div class="row first-section section-mission">
+                    <div class="section-line activ-line"></div>
+                    <div class="section-misson__content">
+                        <div class="vertical-center__line activ-line"></div>
+                        <div class="content-top">
+                            <h1>Миссия компании</h1>
+                        </div>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slider__content slider-content">
+                                        <div class="slider-content_img">
+                                            <img src="./assets/images/mission-section/slider-image1.jpg" alt="">
+                                        </div>
+                                        <div class="slider-content_title">
+                                            <p class="slider-num">01</p>
+                                            <h3>
+                                                Создаем качественные безопасные продукты
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slider__content slider-content">
+                                        <div class="slider-content_img">
+                                            <img src="./assets/images/mission-section/slider-image2.jpg" alt="">
+                                        </div>
+                                        <div class="slider-content_title">
+                                            <p class="slider-num">02</p>
+                                            <h3>
+                                                Повышаем уровень жизни людей
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slider__content slider-content">
+                                        <div class="slider-content_img">
+                                            <img src="./assets/images/mission-section/slider-image3.jpg" alt="">
+                                        </div>
+                                        <div class="slider-content_title">
+                                            <p class="slider-num">03</p>
+                                            <h3>
+                                                Бережно используем ресурсы Земли
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="content-bottom">
+                            <p class="content-bottom__desc">
+                                В компании сформирована высокая производственная культура. Мы четко осознаем ответственность за деятельность, принятые решения и свое воздействие на внешнюю среду.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- S E C T I O N  N E W S-->
+            <div class="section section-bg1 fp-noscroll">
+                <div class="row first-section section-news">
+                    <div class="section-line" style="background-color: rgba(66, 86, 122, 0.1);"></div>
+                    <div class="section-content__top">
+                        <h1>Новости</h1>
+                    </div>
+                    <div class="section-news__top">
+                        <div class="news-top__left">
+                            <div class="news-image">
+                                <img src="./assets/images/news-section/image1.jpg" alt="" />
+                            </div>
+                            <div class="news-content">
+                                <p>20 апреля 2022</p>
+                                <h1>
+                                    «СЕРВОЛЮКС» ВНЕДРИЛ СИСТЕМУ FSSC 22000 НА ЗАО “СМОЛЕВИЧИ МОЛОКО”
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="news-top__right">
+                            <div class="news-image image-right">
+                                <img src="./assets/images/news-section/image2.jpg" alt="" />
+                            </div>
+                            <div class="news-content">
+                                <p>17 февраля 2022</p>
+                                <h1>
+                                    ГК "СЕРВОЛЮКС" УВЕЛИЧИЛ МЯСОПЕРЕРАБОТКУ НА 25,8% ПО ИТОГАМ 2021 ГОДА
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-line activ-line" style="background-color: rgba(66, 86, 122, 0.1);"></div>
+                    <div class="section-news__center">
+                        <div class="center-image">
+                            <img src="./assets/images/news-section/image3.jpg" alt="" />
+                        </div>
+                        <div class="center-content">
+                            <p>15 ноября 2021</p>
+                            <h1>
+                                «СЕРВОЛЮКС» ЗАПУСТИЛ АВТОМАТИЗИРОВАННЫЙ ПРОЕКТ ПО УПРАВЛЕНИЮ ПРОДУКТОВЫМ ПОРТФЕЛЕМ
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="section-news__bottom">
+                        <div class="news-bottom__left">
+                            <div class="bottom-left__image">
+                                <img src="./assets/images/news-section/image4.jpg" alt="" />
+                            </div>
+                            <div class="bottom-left__content">
+                                <p>02 сентября 2021</p>
+                                <h1>
+                                    «СЕРВОЛЮКС» РЕАЛИЗОВАЛ УНИКАЛЬНЫЙ ПРОЕКТ - ШКОЛУ НОВОГО ФОРМАТА
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="news-bottom__right">
+                            <div class="bottom-right-image">
+                                <img src="./assets/images/news-section/image5.jpg" alt="" />
+                            </div>
+                            <div class="bottom-right__content">
+                                <p>23 августа 2021</p>
+                                <h1>
+                                    «СЕРВОЛЮКС» ПОДТВЕРДИЛ СООТВЕТСТВИЕ ТРЕБОВАНИЯМ МЕЖДУНАРОДНОГО СТАНДАРТА ISO 45001:2018 ПРЕДПРИЯТИЯ «СЕРВОЛЮКС АГРО»
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="press-link">Пресс-центр</a>
+                    <footer class="footer">
+                        <div class="footer-menu">
+                            <ul class="footer-item">
+                                <li class="footer-item__list">
+                                    <a href="#" class="footer-item__link">
+                                        Компания
+                                    </a>
+                                </li>
+                                <li class="footer-item__list">
+                                    <a href="#" class="footer-item__link">
+                                        Деятельность
+                                    </a>
+                                </li>
+                                <li class="footer-item__list">
+                                    <a href="#" class="footer-item__link">
+                                        Бренды
+                                    </a>
+                                </li>
+                                <li class="footer-item__list">
+                                    <a href="#" class="footer-item__link">
+                                        Развитие
+                                    </a>
+                                </li>
+                                <li class="footer-item__list">
+                                    <a href="#" class="footer-item__link">
+                                        Пресс-центр
+                                    </a>
+                                </li>
+                                <li class="footer-item__list">
+                                    <a href="#" class="footer-item__link">
+                                        Партнерство
+                                    </a>
+                                </li>
+                                <li class="footer-item__list">
+                                    <a href="#" class="footer-item__link">
+                                        Карьера
+                                    </a>
+                                </li>
+                                <li class="footer-item__list">
+                                    <a href="#" class="footer-item__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-bottom">
+                            <h1>© 1999–2021 ГК «Серволюкс»</h1>
+                            <a href="#">Design by <span>Only</span> </a>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <div class="section-line vertical-line"></div>
+                <div class="modal-content_left">
+                    <ul class="modal-menu">
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">
+                                Деятельность
+                            </a>
+                            <ul class="drop-menu">
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Растениеводство</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Комбикормовое производство</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Племенное птицеводство</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Производство мяса птицы</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Научно-инновационный инжиниринговый центр</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Кулинарные изделия и полуфабрикаты</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Производство мясоколбасных изделий</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Производство молочных продуктов</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Молочно-товарная ферма</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Ритейл</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Промышленная санитария и гигиена</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Проектирование и девелопмент</a>
+                                </li>
+                                <li class="drop-menu__item">
+                                    <a href="#" class="drop-menu__link">Информационные технологии</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">
+                                Бренды
+                            </a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">
+                                Устойчивое развитие
+                            </a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">
+                                Пресс-центр
+                            </a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">
+                                Карьера
+                            </a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">
+                                Партнерство
+                            </a>
+                        </li>
+                        <li class="modal-menu__item">
+                            <a href="#" class="modal-menu__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-line line"></div>
+                <div class="modal-content_right">
+                    <div class="modal-gmail">
+                        <a href="#">feedback@servolux.com</a> <br>
+                        <a href="tel:+375 29 747 37 00">+375 29 747 37 00</a>
+                    </div>
+                    <div class="modal-title">
+                        <p>
+                            © 1999–2021 ГК «Серволюкс»
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script type="text/javascript">
+        const news = document.querySelector('.section-news')
+        const  getTop = el => el.offsetTop + (el.offsetParent && getTop(el.offsetParent))
+
+
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+            anchors : ['first-section', 'second-section', 'third-section', 'fourth-section', 'fifth-section'],
+            scrollingSpeed : 1000,
+            navigation: true,
+            navigationTooltips: ['Компания','Деятельность','Наши направления','Миссия','Новости'],
+            showActiveTooltip:true,
+            // scrollHorizontally: true,
+            normalScrollElements: '.section-news',
+            // scrollOverflow: true,
+            // onLeave : function(origin, destination, direction) {
+            //     console.log(origin,direction, destination)
+            //     console.log(destination )
+            //     if( destination === 5) {
+                    
+            //         // $('#fullpage').fullpage.setAllowScrolling(false);
+            //         console.log('hey')
+            //         // console.log(window.scrollY + news.getBoundingClientRect().top)
+            //     }else {
+            //         $('#fullpage').fullpage.setAllowScrolling(true);
+            //     }
+            // }
+            
+        });
+        });
+        // news.addEventListener("scroll", event => {
+        //     console.log(news.scrollTop)
+        //     if(news.scrollTop < 100) {
+        //         // news.scrollTop = 0;
+        //         $('#fullpage').fullpage.setAllowScrolling(true);
+        //     }
+        // }); 
+    
+    </script>
+</body>
+</html>
+
+
+
